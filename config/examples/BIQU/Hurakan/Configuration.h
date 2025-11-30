@@ -732,13 +732,13 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_Kp_LIST {  17.915,  17.915 }
-    #define DEFAULT_Ki_LIST {   0.756,   0.756 }
-    #define DEFAULT_Kd_LIST { 106.145, 106.145 }
+    #define DEFAULT_KP_LIST {  17.915,  17.915 }
+    #define DEFAULT_KI_LIST {   0.756,   0.756 }
+    #define DEFAULT_KD_LIST { 106.145, 106.145 }
   #else
-    #define DEFAULT_Kp  17.915
-    #define DEFAULT_Ki   0.756
-    #define DEFAULT_Kd 106.145
+    #define DEFAULT_KP  17.915
+    #define DEFAULT_KI   0.756
+    #define DEFAULT_KD 106.145
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -835,9 +835,9 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // BIQU Hurakan
-  #define DEFAULT_bedKp  68.545
-  #define DEFAULT_bedKi   1.873
-  #define DEFAULT_bedKd 627.184
+  #define DEFAULT_BED_KP  68.545
+  #define DEFAULT_BED_KI   1.873
+  #define DEFAULT_BED_KD 627.184
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -918,9 +918,9 @@
 
   // Lasko "MyHeat Personal Heater" (200w) modified with a Fotek SSR-10DA to control only the heating element
   // and placed inside the small Creality printer enclosure tent.
-  #define DEFAULT_chamberKp  37.04
-  #define DEFAULT_chamberKi   1.40
-  #define DEFAULT_chamberKd 655.17
+  #define DEFAULT_CHAMBER_KP  37.04
+  #define DEFAULT_CHAMBER_KI   1.40
+  #define DEFAULT_CHAMBER_KD 655.17
   // M309 P37.04 I1.04 D655.17
 
   // FIND YOUR OWN: "M303 E-2 C8 S50" to run autotune on the chamber at 50 degreesC for 8 cycles.
