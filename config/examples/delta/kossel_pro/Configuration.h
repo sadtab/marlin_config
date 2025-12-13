@@ -1695,7 +1695,7 @@
  * Nozzle-to-Probe offsets { X, Y, Z }
  *
  * X and Y offset
- *   Use a caliper or ruler to measure the distance from the tip of
+ *   Use a caliper or ruler to measure the distance (in mm) from the tip of
  *   the Nozzle to the center-point of the Probe in the X and Y axes.
  *
  * Z offset
@@ -1731,7 +1731,8 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -23, -6, -17.25 } // KosselPro actual: -22.919, -6.304, -17.45
+// KosselPro actual: -22.919, -6.304, -17.45
+#define NOZZLE_TO_PROBE_OFFSET { -23, -6, -17.25 } // (mm) X, Y, Z distance from Nozzle tip to Probe trigger-point
 /**
  * Kossel Pro note: The correct value is likely -17.45 but I'd rather err on the side of
  * not giving someone a head crash. Use something like G29 Z-0.2 to adjust as needed.

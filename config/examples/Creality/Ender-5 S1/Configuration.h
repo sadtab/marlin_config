@@ -1702,7 +1702,7 @@
  * Nozzle-to-Probe offsets { X, Y, Z }
  *
  * X and Y offset
- *   Use a caliper or ruler to measure the distance from the tip of
+ *   Use a caliper or ruler to measure the distance (in mm) from the tip of
  *   the Nozzle to the center-point of the Probe in the X and Y axes.
  *
  * Z offset
@@ -1742,7 +1742,7 @@
 //#define NOZZLE_TO_PROBE_OFFSET { 38, -9, 0 }        // Installation on the right
 //#define NOZZLE_TO_PROBE_OFFSET { 0, -19, 0 }        // Install BLTouch in front
 //#define NOZZLE_TO_PROBE_OFFSET { -29.5, -11.3, 0 }  // Installation on the left
-#define NOZZLE_TO_PROBE_OFFSET { -12.5, 26.5, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -12.5, 26.5, 0 } // (mm) X, Y, Z distance from Nozzle tip to Probe trigger-point
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
