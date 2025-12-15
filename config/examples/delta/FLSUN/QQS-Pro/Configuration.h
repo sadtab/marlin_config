@@ -3411,7 +3411,7 @@
 
 //
 // PanelDue touch controller by Escher3D
-// http://escher3d.com/pages/order/products/product2.php
+// https://escher3d.com/pages/order/products/product2.php
 //
 //#define PANELDUE
 
